@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
 }
 .photo-container {
+    position: relative;
     max-width: 100%;
     height: auto;
     padding: 20px;
@@ -24,11 +25,17 @@ body {
     display: block;
     max-width: 100%;
 }
+.livestream-link {
+    position: absolute;
+    width: 100%; /* 가로 전체 */
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
 <div class="photo-container">
-    <img src="invitation.jpg" alt="Wedding Invitation">
+    <img src="invitation.jpg" alt="Wedding Photo">
+    <a href="https://littlechurchofthewest.com/livestream" target="_blank" class="livestream-link" style="top: 12820px; height: 760px;"></a>
 </div>
 </body>
 </html>
