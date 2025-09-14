@@ -18,23 +18,25 @@ body {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    overflow: hidden; /* 추가: 이미지가 컨테이너 밖으로 나가지 않도록 함 */
+    overflow: hidden;
 }
 .photo-container img {
     width: 100%;
     height: auto;
     display: block;
     max-width: 100%;
-    /* 추가: 상단 200px 잘라내기 */
-    margin-top: -200px; 
+    /* 상단 80px 잘라내기 */
+    margin-top: -80px;
 }
 .livestream-link {
     position: absolute;
-    width: 100%; /* 가로 전체 */
+    width: 100%;
     cursor: pointer;
-    z-index: 10; /* 추가: 링크가 이미지 위에 확실히 보이도록 함 */
+    z-index: 10;
+    /* y좌표 12820 ~ 13580 영역에 맞춰 퍼센트 값으로 변경 */
+    top: 87.38%;
+    height: 5.21%;
 }
-/* 추가된 코드 */
 @media (max-width: 768px) {
     .photo-container {
         padding: 0;
@@ -45,7 +47,7 @@ body {
 <body>
 <div class="photo-container">
     <img src="invitation.jpg" alt="Wedding Photo">
-    <a href="https://littlechurchofthewest.com/livestream" target="_blank" class="livestream-link" style="top: 86.55%; height: 5.21%;"></a>
+    <a href="https://littlechurchofthewest.com/livestream" target="_blank" class="livestream-link"></a>
 </div>
 </body>
 </html>
